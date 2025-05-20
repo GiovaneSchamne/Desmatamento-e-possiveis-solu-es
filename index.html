@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desmatamento: Repense Seus Atos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #228B22; /* Verde Floresta Escuro */
+            color: #fff;
+            padding: 2em 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 0.5em;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.1em;
+            font-weight: 400;
+        }
+
+        main {
+            padding: 2em;
+            max-width: 1000px;
+            margin: 2em auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 2.5em;
+        }
+
+        section h2 {
+            color: #228B22; /* Verde Floresta Escuro */
+            text-align: center;
+            margin-bottom: 1.5em;
+            font-size: 2em;
+            border-bottom: 2px solid #8FBC8F; /* Verde Claro Acinzentado */
+            padding-bottom: 0.5em;
+        }
+
+        .consequence-card {
+            background-color: #f5f5dc; /* Bege claro */
+            padding: 1.5em;
+            margin-bottom: 1.5em;
+            border-radius: 8px;
+            border-left: 5px solid #2E8B57; /* Verde Floresta Médio */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .consequence-card h3 {
+            color: #2E8B57; /* Verde Floresta Médio */
+            margin-top: 0;
+            font-size: 1.5em;
+            margin-bottom: 0.75em;
+        }
+
+        .consequence-card p {
+            font-size: 1.1em;
+            line-height: 1.7;
+        }
+
+        .consequence-image {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 1em;
+        }
+
+        #solutions ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #solutions ul li {
+            background-color: #f0fff0; /* Verde muito claro */
+            margin-bottom: 0.75em;
+            padding: 1.2em;
+            border-radius: 8px;
+            border-left: 4px solid #3CB371; /* Verde Médio */
+            font-weight: 600;
+            font-size: 1.1em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex; /* Adiciona flexbox para alinhar imagem e texto */
+            align-items: center; /* Alinha verticalmente os itens */
+            gap: 1em; /* Adiciona um espaço entre a imagem e o texto */
+        }
+
+        #solutions ul li:before {
+            content: '✓'; /* Checkmark */
+            color: #3CB371; /* Verde Médio */
+            margin-right: 0.5em;
+        }
+
+        .solution-image {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 1em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2.5em;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding: 1.5em;
+                margin: 1.5em auto;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            section h2 {
+                font-size: 1.75em;
+            }
+
+            .consequence-card h3 {
+                font-size: 1.25em;
+            }
+
+            .consequence-card p {
+                font-size: 1em;
+            }
+
+            #solutions ul li {
+                font-size: 1em;
+                padding: 1em;
+                flex-direction: column; /* Stack image and text on small screens */
+                align-items: flex-start;  /* Alinha à esquerda em telas pequenas */
+            }
+            .solution-image {
+                margin-top: 1em; /* garante que a imagem tenha margem em telas pequenas também */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Desmatamento: Um Chamado à Ação</h1>
+        <p>Reflorestamento e Conscientização para um Futuro Sustentável</p>
+    </header>
+
+    <main>
+        <section id="consequences">
+            <h2>Consequências Devastadoras do Desmatamento</h2>
+            <div class="consequence-card">
+                <h3>Perda Irreversível da Biodiversidade</h3>
+                <p>O desmatamento é uma das principais causas da perda de biodiversidade no mundo. A destruição de habitats naturais leva à extinção de inúmeras espécies de plantas e animais, comprometendo o equilíbrio dos ecossistemas e reduzindo a diversidade genética.</p>
+                <img src="https://images.unsplash.com/photo-1501618295575-e75af7692596?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Desmatamento da Floresta" class="consequence-image">
+            </div>
+            <div class="consequence-card">
+                <h3>Contribuição Alarmante para as Mudanças Climáticas</h3>
+                <p>As florestas desempenham um papel crucial na regulação do clima, absorvendo grandes quantidades de dióxido de carbono (CO2). O desmatamento libera esse carbono armazenado na atmosfera, intensificando o efeito estufa e contribuindo significativamente para o aquecimento global e as mudanças climáticas.</p>
+                <img src="https://images.unsplash.com/photo-1562777456-7ce810b74717?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Emissão de Carbono pelo Desmatamento" class="consequence-image">
+            </div>
+            <div class="consequence-card">
+                <h3>Degradação do Solo e Impacto na Agricultura</h3>
+                <p>A remoção da cobertura vegetal deixa o solo exposto à erosão, resultando na perda de nutrientes essenciais e na degradação da qualidade do solo. Esse processo compromete a capacidade produtiva da terra, afetando a agricultura e a segurança alimentar.</p>
+                 <img src="https://images.unsplash.com/photo-1557559411-a994625892c4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Solo Erosionado" class="consequence-image">
+            </div>
+            <div class="consequence-card">
+                <h3>Interrupção dos Ciclos Hídricos e Escassez de Água</h3>
+                <p>As florestas desempenham um papel fundamental na manutenção dos ciclos hídricos, influenciando a formação de chuvas, a recarga de aquíferos e a manutenção de rios e nascentes. O desmatamento pode levar à diminuição da disponibilidade de água, causando secas, enchentes e outros desastres naturais.</p>
+                <img src="https://images.unsplash.com/photo-1591028573624-5558457b5518?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Seca devido ao Desmatamento" class="consequence-image">
+            </div>
+        </section>
+
+        <section id="solutions">
+            <h2>Soluções Viáveis para um Futuro Sustentável</h2>
+            <p>Ações individuais e coletivas são essenciais para combater o desmatamento e promover a restauração florestal:</p>
+            <ul>
+                <li>Reflorestar áreas degradadas e promover o plantio de árvores nativas.
+                    <img src="https://images.unsplash.com/photo-1562281591-5515b5969551?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Reflorestamento" class="solution-image">
+                </li>
+                <li>Adotar práticas de consumo consciente, priorizando produtos de origem sustentável.
+                     <img src="https://images.unsplash.com/photo-1584788361654-c8924a685418?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Consumo Sustentável" class="solution-image">
+                </li>
+                <li>Reduzir o desperdício de alimentos e outros recursos, evitando o consumo excessivo.
+                    <img src="https://images.unsplash.com/photo-1593614201534-4a9f8ee50578?q=80&w=2027&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Redução de Desperdício" class="solution-image">
+                </li>
+                <li>Apoiar iniciativas e organizações que atuam na preservação ambiental e no desenvolvimento sustentável.
+                    <img src="https://images.unsplash.com/photo-1587311022893-a919284cc9d7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Preservação Ambiental" class="solution-image">
+                </li>
+                <li>Promover a educação ambiental e a conscientização sobre a importância das florestas.
+                     <img src="https://images.unsplash.com/photo-1501861253525-a255b5928526?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Educação Ambiental" class="solution-image">
+                </li>
+                <li>Implementar políticas públicas eficazes para combater o desmatamento ilegal e incentivar a conservação.
+                    <img src="https://images.unsplash.com/photo-1600804340584-c7db2e501694?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Políticas Públicas" class="solution-image">
+                </li>
+                <li>Desenvolver e implementar sistemas agroflorestais e outras práticas agrícolas sustentáveis.
+                     <img src="https://images.unsplash.com/photo-1682687982046-e5e46906bc6e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Agroflorestal" class="solution-image">
+                </li>
+                 <li>Utilizar madeira de forma responsável, optando por produtos certificados e de manejo florestal sustentável.
+                    <img src="https://images.unsplash.com/photo-1615825285732-b35e4ddb5289?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Manejo Florestal Sustentável" class="solution-image">
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Conscientização Ambiental. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
