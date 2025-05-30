@@ -1,1 +1,365 @@
+/* Definindo variáveis CSS para cores (Ajustadas para harmonização) */
+:root {
+    /* Modo Claro */
+    --bg-light: #f8f8f8; /* Fundo suave */
+    --text-light: #333; /* Texto escuro */
+    --container-bg-light: #ffffff; /* Fundo do container branco */
+    --header-h1-light: #1e8449; /* Verde mais vibrante */
+    --h2-light: #2874a6; /* Azul profundo para subtítulos */
+    --border-light: #e0e0e0; /* Borda suave */
+    --highlight-light: #c0392b; /* Vermelho forte para destaque */
+    --footer-text-light: #666; /* Texto do rodapé mais escuro */
+    --box-shadow-light: rgba(0, 0, 0, 0.08); /* Sombra mais sutil */
+    --icon-color-light: #2874a6; /* Cor do ícone no modo claro */
+    --button-text-light: white; /* Cor do texto do botão */
+}
+
+/* Modo Escuro - Quando a classe 'dark-mode' é aplicada ao body (Ajustadas para harmonização) */
+body.dark-mode {
+    --bg-light: #1f2229; /* Fundo escuro profundo */
+    --text-light: #e0e0e0; /* Texto claro */
+    --container-bg-light: #2c303a; /* Fundo do container escuro */
+    --header-h1-light: #7cb342; /* Verde mais claro e distinto */
+    --h2-light: #64b5f6; /* Azul claro para subtítulos */
+    --border-light: #444; /* Borda escura */
+    --highlight-light: #e57373; /* Vermelho mais suave para destaque */
+    --footer-text-light: #a0a0a0; /* Texto do rodapé mais claro */
+    --box-shadow-light: rgba(255, 255, 255, 0.05); /* Sombra mais sutil */
+    --icon-color-light: #64b5f6; /* Cor do ícone no modo escuro */
+    --button-text-light: #1f2229; /* Cor do texto do botão (pode ser ajustado) */
+}
+
+
+/* Estilos gerais do corpo da página - Usando as variáveis */
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte principal */
+    margin: 0; /* Remove margens padrão do corpo */
+    padding: 0; /* Remove preenchimento padrão do corpo */
+    background-color: var(--bg-light); /* Cor de fundo - usa variável */
+    color: var(--text-light); /* Cor do texto principal - usa variável */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transição suave para o modo escuro */
+}
+
+/* Estilo para o container principal que centraliza o conteúdo */
+.container {
+    max-width: 900px; /* Largura máxima do container para desktops */
+    margin: 40px auto; /* Centraliza o container horizontalmente e adiciona margem superior/inferior */
+    padding: 20px; /* Preenchimento interno */
+    background-color: var(--container-bg-light); /* Fundo do container - usa variável */
+    box-shadow: 0 0 10px var(--box-shadow-light); /* Sombra - usa variável */
+    border-radius: 8px; /* Cantos arredondados */
+    transition: background-color 0.5s ease, box-shadow 0.5s ease; /* Transição suave */
+}
+
+/* Estilo para o cabeçalho da página */
+header {
+    text-align: center; /* Centraliza o texto do cabeçalho */
+    margin-bottom: 30px; /* Margem inferior */
+}
+
+/* Estilo para o título principal (h1) */
+header h1 {
+    color: var(--header-h1-light); /* Cor do título - usa variável */
+    font-size: 2.5em; /* Tamanho da fonte */
+    margin-bottom: 10px; /* Margem inferior */
+    transition: color 0.5s ease; /* Transição suave */
+}
+
+/* Estilo para as seções de conteúdo */
+section {
+    margin-bottom: 30px; /* Margem inferior entre as seções */
+}
+
+/* Estilo para os subtítulos (h2) - MAIOR E EM NEGRITO */
+h2 {
+    color: var(--h2-light); /* Cor do subtítulo - usa variável */
+    border-bottom: 2px solid var(--border-light); /* Linha inferior - usa variável */
+    padding-bottom: 10px; /* Preenchimento abaixo da linha */
+    margin-bottom: 20px; /* Margem inferior */
+    font-size: 2.2em; /* Tamanho da fonte aumentado */
+    font-weight: 700; /* Negrito mais forte (700 é bold na fonte Roboto) */
+    text-align: center; /* Centraliza os subtítulos para harmonizar */
+    transition: color 0.5s ease, border-color 0.5s ease; /* Transição suave */
+}
+
+/* Estilo para os parágrafos */
+p {
+    margin-bottom: 15px; /* Margem inferior */
+    text-align: justify; /* Justifica o texto */
+}
+
+/* Estilo para listas não ordenadas */
+ul {
+    list-style-type: disc; /* Tipo de marcador da lista */
+    margin-left: 20px; /* Recuo da lista */
+    margin-bottom: 15px; /* Margem inferior */
+}
+
+/* Estilo para itens da lista */
+ul li {
+    margin-bottom: 8px; /* Margem inferior entre os itens */
+}
+
+/* Estilo para texto destacado */
+.highlight {
+    color: var(--highlight-light); /* Cor de destaque - usa variável */
+    font-weight: bold; /* Negrito */
+    transition: color 0.5s ease; /* Transição suave */
+}
+
+/* Estilo para imagens dentro do conteúdo */
+.content-image {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaço extra abaixo da imagem */
+    margin: 20px auto; /* Centraliza a imagem e adiciona margem */
+    border-radius: 5px; /* Cantos arredondados para as imagens */
+    box-shadow: 0 2px 5px var(--box-shadow-light); /* Sombra suave para as imagens */
+    transition: box-shadow 0.5s ease; /* Transição suave */
+    cursor: pointer; /* Indica que a imagem é clicável */
+}
+
+/* Estilo para o rodapé */
+footer {
+    text-align: center; /* Centraliza o texto do rodapé */
+    margin-top: 40px; /* Margem superior */
+    padding-top: 20px; /* Preenchimento superior */
+    border-top: 1px solid var(--border-light); /* Linha superior - usa variável */
+    color: var(--footer-text-light); /* Cor do texto do rodapé - usa variável */
+    font-size: 0.9em; /* Tamanho da fonte menor */
+    transition: color 0.5s ease, border-color 0.5s ease; /* Transição suave */
+}
+
+/* Estilos para o container do vídeo (garante que o vídeo seja responsivo) */
+.video-container {
+    position: relative; /* Necessário para posicionar o vídeo dentro */
+    padding-bottom: 56.25%; /* Proporção de 16:9 (altura/largura) */
+    height: 0;
+    overflow: hidden; /* Esconde o que ultrapassa o container */
+    margin: 20px auto; /* Centraliza o container do vídeo */
+    max-width: 100%; /* Garante que o container não seja maior que o pai */
+    border-radius: 5px; /* Cantos arredondados para o container do vídeo */
+    box-shadow: 0 2px 5px var(--box-shadow-light); /* Sombra suave */
+    transition: box-shadow 0.5s ease; /* Transição suave */
+}
+
+/* Estilos para o vídeo ou iframe dentro do container */
+.responsive-video {
+    position: absolute; /* Posicionamento absoluto dentro do container */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa 100% da largura do container */
+    height: 100%; /* Ocupa 100% da altura do container */
+    border: none; /* Remove borda padrão de iframes */
+}
+
+/* Estilos para o Botão de Contraste com Ícones */
+#toggle-contrast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    /* Ajustes para o botão com ícone */
+    display: flex; /* Para alinhar o ícone verticalmente */
+    align-items: center; /* Centraliza o ícone */
+    justify-content: center; /* Centraliza o ícone */
+    width: 48px; /* Largura fixa para o botão do ícone */
+    height: 48px; /* Altura fixa para o botão do ícone */
+    padding: 0; /* Remove padding, já que o tamanho é fixo */
+
+    background-color: var(--h2-light);
+    color: var(--button-text-light); /* Cor do ícone será definida abaixo */
+    border: none;
+    border-radius: 50%; /* Torna o botão redondo */
+    cursor: pointer;
+    font-size: 1em; /* Não terá texto, mas manter para consistência */
+    transition: background-color 0.3s ease, transform 0.1s ease, color 0.5s ease;
+    z-index: 1000;
+    box-shadow: 0 2px 5px var(--box-shadow-light); /* Sombra para destacar o botão */
+}
+
+#toggle-contrast:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Estilos para os ícones SVG dentro do botão */
+.theme-icon {
+    width: 24px; /* Tamanho do ícone SVG */
+    height: 24px;
+    stroke: var(--button-text-light); /* Cor do traço do ícone */
+    fill: none; /* Não preenche o ícone */
+    transition: opacity 0.3s ease; /* Transição suave para aparecer/desaparecer */
+}
+
+.theme-icon:not(.active) {
+    opacity: 0; /* Ícones não ativos ficam invisíveis */
+    position: absolute; /* Para que ocupem o mesmo espaço sem empurrar um ao outro */
+}
+
+/* Classe para o ícone ativo (visível) */
+.theme-icon.active {
+    opacity: 1; /* Ícone ativo fica visível */
+}
+
+/* ========================================= */
+/* NOVO: Estilos para o Modal de Imagem      */
+/* ========================================= */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fica por cima de tudo */
+    z-index: 2000; /* Z-index alto para ficar acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: auto; /* Habilita rolagem se a imagem for muito grande */
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo preto semi-transparente */
+    display: flex; /* Para centralizar o conteúdo */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    opacity: 0; /* Começa invisível para transição */
+    transition: opacity 0.3s ease-in-out; /* Transição suave */
+}
+
+.modal.active {
+    display: flex; /* Mostra o modal */
+    opacity: 1; /* Torna-o visível */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%; /* Largura máxima da imagem dentro do modal */
+    max-height: 90vh; /* Altura máxima da imagem (vh = viewport height) */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra mais forte */
+    transition: transform 0.3s ease-in-out; /* Transição para o zoom/pan */
+}
+
+.modal-caption {
+    margin-top: 10px;
+    text-align: center;
+    color: #ccc; /* Cor do texto da legenda */
+    font-size: 1.2em;
+    padding: 10px;
+    max-width: 90%;
+    word-wrap: break-word; /* Quebra de linha para legendas longas */
+}
+
+/* Botão de Fechar */
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 2001; /* Acima do modal */
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* ========================================= */
+/* Media Queries para Responsividade         */
+/* ========================================= */
+
+/* Para telas menores que 768px (tablets e alguns celulares maiores) */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    /* Ajuste para h2 em telas menores */
+    h2 {
+        font-size: 1.8em; /* Reduz o tamanho do h2 */
+    }
+
+    p, ul li {
+        font-size: 0.95em;
+    }
+
+    ul {
+        margin-left: 15px;
+    }
+
+    #toggle-contrast {
+        width: 40px; /* Reduz o tamanho do botão em telas menores */
+        height: 40px;
+        top: 15px;
+        right: 15px;
+    }
+
+    .theme-icon {
+        width: 20px; /* Reduz o tamanho do ícone */
+        height: 20px;
+    }
+
+    .close-button {
+        font-size: 30px; /* Ajusta o tamanho do botão de fechar */
+        top: 10px;
+        right: 20px;
+    }
+
+    .modal-caption {
+        font-size: 1em; /* Reduz o tamanho da legenda no celular */
+    }
+}
+
+/* Para telas menores que 480px (celulares) */
+@media (max-width: 480px) {
+    .container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    /* Ajuste para h2 em telas muito pequenas */
+    h2 {
+        font-size: 1.5em; /* Reduz mais o tamanho do h2 */
+    }
+
+    p, ul li {
+        font-size: 0.9em;
+        text-align: left;
+    }
+
+    ul {
+        margin-left: 10px;
+    }
+
+    #toggle-contrast {
+        width: 36px; /* Mais uma redução para telas muito pequenas */
+        height: 36px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .theme-icon {
+        width: 18px; /* Mais uma redução para o ícone */
+        height: 18px;
+    }
+
+    .close-button {
+        font-size: 24px; /* Ajusta o tamanho do botão de fechar para celular */
+        top: 5px;
+        right: 15px;
+    }
+}
 
