@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultura e Desmatamento: Impactos e Soluções</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Agricultura e Desmatamento: Impactos e Soluções</h1>
+            <p>Compreendendo a relação e buscando um futuro sustentável.</p>
+            <button id="toggle-contrast" aria-label="Alternar Contraste de Cores (Modo Claro para Escuro e Vice-Versa)">
+                <svg id="moon-icon" class="theme-icon active" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                <svg id="sun-icon" class="theme-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
+        </header>
 
+        <main>
+            <section>
+                <h2>Como a Agricultura Influencia o Desmatamento?</h2>
+                <p>A expansão agrícola é uma das <span class="highlight">principais causas</span> do desmatamento global. Para atender à crescente demanda por alimentos, rações e biocombustíveis, vastas áreas de florestas são convertidas em terras cultiváveis ou pastagens. Isso acontece de diversas formas:</p>
+                <img src="https://placehold.co/800x450/A0522D/FFFFFF?text=Área+Desmatada"
+                     alt="Vista aérea de uma vasta área de floresta tropical, onde grande parte foi desmatada, mostrando solo exposto e árvores derrubadas."
+                     class="content-image" onerror="this.onerror=null;this.src='https://placehold.co/800x450/CCCCCC/000000?text=Imagem+não+disponível';">
+                <ul>
+                    <li>**Criação de Gado:** A pecuária é um dos maiores motores do desmatamento, especialmente em regiões como a Amazônia, onde grandes extensões de floresta são derrubadas para a formação de pastos.</li>
+                    <img src="https://placehold.co/800x450/8B4513/FFFFFF?text=Gado+em+Pastagem]"
+                         alt="Grandes rebanhos de gado pastando em uma vasta área de pastagem recém-formada a partir de floresta, sob um céu azul."
+                         class="content-image" onerror="this.onerror=null;this.src='https://placehold.co/800x450/CCCCCC/000000?text=Imagem+não+disponível';">
+                    <li>**Culturas Agrícolas:** Plantio de monoculturas como soja, palma de óleo e milho, muitas vezes destinadas à exportação, exige a abertura de novas áreas, resultando na destruição de ecossistemas florestais.</li>
+                    <img src="https://placehold.co/800x450/6B8E23/FFFFFF?text=Plantação+de+Soja"
+                         alt="Extensa plantação de soja se estendendo até o horizonte, com fileiras verdes e um trator trabalhando ao fundo."
+                         class="content-image" onerror="this.onerror=null;this.src='https://placehold.co/800x450/CCCCCC/000000?text=Imagem+não+disponível';">
+                    <li>**Infraestrutura:** A construção de estradas e outras infraestruturas para escoamento da produção agrícola também contribui indiretamente para o desmatamento, ao facilitar o acesso a áreas antes preservadas.</li>
+                    <li>**Queimadas:** Muitas vezes, o desmatamento é precedido por queimadas, que são utilizadas para "limpar" o terreno, mas que escapam do controle e destroem áreas ainda maiores de floresta.</li>
+                    <img src="https://placehold.co/800x450/FF4500/FFFFFF?text=Fumaça+de+Queimada"
+                         alt="Colunas densas de fumaça subindo de uma floresta em chamas, com o céu escurecido pela fuligem."
+                         class="content-image" onerror="this.onerror=null;this.src='https://placehold.co/800x450/CCCCCC/000000?text=Imagem+não+disponível';">
+                </ul>
+                <p>As consequências do desmatamento são severas, incluindo a <span class="highlight">perda de biodiversidade</span>, alterações climáticas, erosão do solo e impactos nos ciclos hidrológicos.</p>
+            </section>
+
+            <section>
+                <h2>Assista e Entenda Mais</h2>
+                <p>Confira um vídeo que aprofunda o tema da agricultura e o desmatamento, e como podemos buscar soluções sustentáveis:</p>
+
+                <div class="video-container">
+                    <iframe
+                        class="responsive-video"
+                        src="https://www.youtube.com/embed/5JV_tELz2tI?si=NtBZGdI7YkxlYt6n"
+                        title="Causas e Consequências do Desmatamento na Amazônia"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+
+                <p>O vídeo oferece uma perspectiva visual e aprofundada sobre os desafios e as oportunidades para um futuro mais verde.</p>
+            </section>
+            <section>
+                <h2>O Que Podemos Fazer Para Resolver Este Problema?</h2>
+                <p>A boa notícia é que existem soluções e alternativas que podem reduzir significativamente a influência da agricultura no desmatamento. É um esforço conjunto que envolve governos, produtores, consumidores e a sociedade em geral:</p>
+                <ul>
+                    <li>**Agricultura Sustentável:** Incentivar e apoiar práticas agrícolas que minimizem o impacto ambiental, como a agricultura de baixo carbono, sistemas agroflorestais e agricultura orgânica.</li>
+                    <img src="https://placehold.co/800x450/3CB371/FFFFFF?text=Agricultura+Sustentável"
+                         alt="Agricultor trabalhando em uma plantação com técnicas de agricultura sustentável, como plantio em curvas de nível ou cultivo em faixas."
+                         class="content-image" onerror="this.onerror=null;this.src='https://placehold.co/800x450/CCCCCC/000000?text=Imagem+não+disponível';">
+                    <li>**Intensificação Sustentável:** Aumentar a produtividade em áreas já desmatadas ou degradadas, evitando a necessidade de abrir novas áreas de floresta. Isso inclui o uso de tecnologias e manejos mais eficientes.</li>
+                    <li>**Restaurar Áreas Degradadas:** Recuperar florestas e ecossistemas em áreas que foram desmatadas, promovendo a biodiversidade e os serviços ecossistêmicos.</li>
+                    <img src="https://placehold.co/800x450/4682B4/FFFFFF?text=Reflorestamento"
+                         alt="Jovens árvores sendo plantadas em uma área que antes era desmatada, com uma floresta densa ao fundo, simbolizando a restauração."
+                         class="content-image" onerror="this.onerror=null;this.src='https://placehold.co/800x450/CCCCCC/000000?text=Imagem+não+disponível';">
+                    <li>**Consumo Consciente:** Consumir produtos de empresas que comprovadamente adotam práticas sustentáveis e se preocupam com a origem de seus insumos, preferindo produtos de cadeias produtivas livres de desmatamento.</li>
+                    <img src="https://placehold.co/800x450/FFD700/000000?text=Selo+Sustentável"
+                         alt="Selo verde de sustentabilidade com ícone de folha ou árvore, indicando produto ecologicamente correto."
+                         class="content-image" onerror="this.onerror=null;this.src='https://placehold.co/800x450/CCCCCC/000000?text=Imagem+não+disponível';">
+                    <li>**Políticas Públicas e Fiscalização:** Fortalecer as leis ambientais, a fiscalização e punir o desmatamento ilegal, além de criar incentivos para a produção sustentável.</li>
+                    <li>**Apoio à Pesquisa e Desenvolvimento:** Investir em novas tecnologias e conhecimentos que permitam uma produção agrícola mais eficiente e menos impactante.</li>
+                    <li>**Educação e Conscientização:** Informar e engajar a população sobre a importância da conservação florestal e o papel da agricultura nesse contexto.</li>
+                </ul>
+                <p>A transição para um modelo agrícola mais sustentável é fundamental para garantir a segurança alimentar sem comprometer o nosso planeta.</p>
+            </section>
+
+            <section>
+                <h2>Quais Ações Podemos Ter Para Melhorar a Situação Atual do Mundo?</h2>
+                <p>Além das soluções focadas na agricultura, existem diversas ações que, individualmente e coletivamente, podem contribuir significativamente para um futuro mais sustentável e um mundo melhor para todos:</p>
+                <ul>
+                    <li>**Consumo Consciente e Redução de Resíduos:**
+                        Adotar hábitos de consumo que priorizem produtos duráveis, locais e com menor impacto ambiental. Reduzir o desperdício de alimentos, reciclar e reutilizar são passos essenciais.
+                    </li>
+                    <img src="https://placehold.co/800x450/6A5ACD/FFFFFF?text=Consumo+Consciente"
+                         alt="Pessoa separando lixo para reciclagem com diferentes lixeiras coloridas para papel, plástico e vidro."
+                         class="content-image" onerror="this.onerror=null;this.src='https://placehold.co/800x450/CCCCCC/000000?text=Imagem+não+disponível';">
+                    <li>**Apoio à Energia Renovável:**
+                        Incentivar a transição para fontes de energia limpa, como solar e eólica, em detrimento dos combustíveis fósseis. Isso pode ser feito através de escolhas de consumo e apoio a políticas públicas.
+                    </li>
+                    <img src="https://placehold.co/800x450/20B2AA/FFFFFF?text=Energia+Renovável"
+                         alt="Campo com painéis solares em primeiro plano e turbinas eólicas ao fundo, sob um céu azul claro."
+                         class="content-image" onerror="this.onerror=null;this.src='https://placehold.co/800x450/CCCCCC/000000?text=Imagem+não+disponível';">
+                    <li>**Participação Cívica e Advocacia:**
+                        Engajar-se em causas ambientais, votar em representantes comprometidos com a sustentabilidade e participar de movimentos sociais que buscam mudanças positivas.
+                    </li>
+                    <img src="https://placehold.co/800x450/FF6347/FFFFFF?text=Participação+Cívica"
+                         alt="Grupo de pessoas segurando cartazes com mensagens ambientais em uma manifestação pacífica."
+                         class="content-image" onerror="this.onerror=null;this.src='https://placehold.co/800x450/CCCCCC/000000?text=Imagem+não+disponível';">
+                    <li>**Educação e Conscientização:**
+                        Compartilhar conhecimento sobre questões ambientais e sociais, incentivando a reflexão e a adoção de práticas mais sustentáveis em comunidades e escolas.
+                    </li>
+                    <img src="https://placehold.co/800x450/4682B4/FFFFFF?text=Educação+Ambiental"
+                         alt="Crianças e um professor aprendendo sobre plantas e natureza em um jardim escolar."
+                         class="content-image" onerror="this.onerror=null;this.src='https://placehold.co/800x450/CCCCCC/000000?text=Imagem+não+disponível';">
+                    <li>**Apoio a Iniciativas de Conservação:**
+                        Contribuir com organizações e projetos que trabalham diretamente na proteção de ecossistemas, reflorestamento e conservação da biodiversidade.
+                    </li>
+                    <img src="https://placehold.co/800x450/32CD32/FFFFFF?text=Conservação+da+Natureza"
+                         alt="Voluntários plantando árvores em uma área de reflorestamento, com equipamentos de jardinagem ao redor."
+                         class="content-image" onerror="this.onerror=null;this.src='https://placehold.co/800x450/CCCCCC/000000?text=Imagem+não+disponível';">
+                </ul>
+                <p>Cada pequena ação conta e, juntas, elas formam um movimento poderoso em direção a um futuro mais justo e sustentável.</p>
+            </section>
+            </main>
+        <footer>
+            <p>&copy; 2025 Informações sobre Agricultura e Desmatamento. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <div id="image-modal" class="modal">
+        <span class="close-button" aria-label="Fechar Imagem Expandida">&times;</span>
+        <img class="modal-content" id="expanded-image" alt="Imagem expandida">
+        <div id="caption" class="modal-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
